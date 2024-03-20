@@ -1,0 +1,124 @@
+/* App.css */
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phase-box {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .phase-box:hover {
+    background-color: #ddd;
+  }
+  
+  .details {
+    position: absolute;
+    top: 75vh;
+  }
+  
+  .phase {
+    background-color: #bbbbbb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .phase h3 {
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .phase p {
+    color: #666;
+  }
+  
+  button {
+    background-color: #41bbda; 
+    border: none;
+    color: rgb(68, 68, 68);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #3faecf; 
+  }
+  
+  button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .phase-box button {
+    background-color: #f0f0f0;
+  }
+  
+  .phase-box button:hover {
+    background-color: #ddd;
+  }
+
+  @media screen and (max-width: 768px) {
+    .app {
+      flex-direction: column;
+      align-items: center; /* Align items to the center for smaller screens */
+    }
+  
+    .timeline {
+      width: 100%; /* Ensure the timeline takes full width */
+    }
+  
+    .phase-box {
+      width: 80%; /* Adjust width of phase boxes for smaller screens */
+      margin: 5px auto; /* Center align phase boxes */
+    }
+  
+    .details {
+      position: static; /* Reset position for details section */
+      margin-top: 20px; /* Add some space between timeline and details */
+    }
+  
+    /* Additional styles to make buttons responsive */
+    button {
+      width: 100%; /* Make buttons take full width */
+      margin: 4px 0; /* Adjust margin for buttons */
+    }
+  
+    .planning-buttons,
+    .research-buttons,
+    .designing-buttons,
+    .manufacturing-buttons,
+    .sales-marketing-buttons {
+      display: flex;
+      flex-wrap: wrap; /* Wrap buttons within their respective sections */
+      justify-content: space-between; /* Evenly distribute buttons */
+    }
+  
+    .b2c-buttons,
+    .b2c-options {
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      margin-top: 5px; /* Add space between button groups */
+    }
+  }
