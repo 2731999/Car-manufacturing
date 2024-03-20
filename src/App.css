@@ -82,27 +82,26 @@
   @media screen and (max-width: 768px) {
     .app {
       flex-direction: column;
-      align-items: center; /* Align items to the center for smaller screens */
+      align-items: center;
     }
   
     .timeline {
-      width: 100%; /* Ensure the timeline takes full width */
+      width: 100%; 
     }
   
     .phase-box {
-      width: 80%; /* Adjust width of phase boxes for smaller screens */
-      margin: 5px auto; /* Center align phase boxes */
+      width: 80%; 
+      margin: 5px auto; 
     }
   
     .details {
-      position: static; /* Reset position for details section */
-      margin-top: 20px; /* Add some space between timeline and details */
+      position: static; 
+      margin-top: 20px; 
     }
   
-    /* Additional styles to make buttons responsive */
     button {
-      width: 100%; /* Make buttons take full width */
-      margin: 4px 0; /* Adjust margin for buttons */
+      width: 100%;
+      margin: 4px 0; 
     }
   
     .planning-buttons,
@@ -111,14 +110,14 @@
     .manufacturing-buttons,
     .sales-marketing-buttons {
       display: flex;
-      flex-wrap: wrap; /* Wrap buttons within their respective sections */
-      justify-content: space-between; /* Evenly distribute buttons */
+      flex-wrap: wrap; 
+      justify-content: space-between; 
     }
   
     .b2c-buttons,
     .b2c-options {
       display: flex;
-      flex-direction: column; /* Stack buttons vertically */
-      margin-top: 5px; /* Add space between button groups */
+      flex-direction: column; 
+      margin-top: 5px; 
     }
   }
